@@ -5,12 +5,9 @@
     'td td td td td td td td'
     'nd nd nd nd nd nd nd nd'
     'id id id id id id id id'
-    'sd sd sd sd sd sd sd sd'
+    'sd sd sd sd hd hd hd hd'
     'fd fd fd fd fd fd fd fd'
     ;
-}
-.align-content-center{
-    text-align: center;
 }
 #navbarDiv{
     grid-area: nd;
@@ -39,7 +36,7 @@
     'td td td td td td td td'
     'nd nd nd nd nd nd nd nd'
     'id id id id id id id id'
-    'sd sd sd sd sd sd sd sd'
+    'sd sd sd sd hd hd hd hd'
     'fd fd fd fd fd fd fd fd'
 
     ;

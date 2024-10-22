@@ -1,44 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Me</title>
+    <title>Contact Form</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .contact-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            text-align: center;
-        }
-        .contact-details {
-            margin: 10px 0;
-        }
+        form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
     </style>
 </head>
 <body>
-    <div class="contact-container">
-        <h1>Contact Me</h1>
-        <div class="contact-details">
-            <p><strong>Name:</strong> Victor Wandera Okumu</p>
-        </div>
-        <div class="contact-details">
-            <p><strong>Email:</strong> Okumuvictor04@gmail.com</p>
-        </div>
-        <div class="contact-details">
-            <p><strong>Phone number:</strong> 254759438266</p>
-        </div>
-        <div class="contact-details">
-            <p><strong>Message:</strong> Reach out to me if you have any questions or just want to chat!</p>
-        </div>
-    </div>
+    <h1>Contact Me</h1>
+    <form action="mailto:okumuvictor04.com" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Send">
+    </form>
 </body>
 </html>
